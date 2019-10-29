@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>itigo.vn</title>
+</head>
+<body>
+
+    <!-- Index 1: tiêu đề  -->
+    <pre>
+        Index 1: Thẻ title trong thẻ head là thẻ tiêu đề của toàn bộ trang web
+    </pre>
+
+    <!-- Index 2: xuống dòng văn bản -->
+    <pre>
+        Index 2: Thẻ br trong html được sử dụng để tạo xuống dòng trong 1 đoạn văn bản
+                    Thẻ br là 1 thẻ đặc biệt thẻ mở cũng chính là thẻ đóng
+    </pre>
+
+    <div>
+        đây là dòng 1
+        đây là dòng 2
+        đây là dòng 3
+    </div>
+
+    <div>
+        đây là dòng 1 <br/>
+        đây là dòng 2 <br/>
+        đây là dòng 3
+    </div>
+
+
+    <!-- Index 4: Danh sách-->
+    <pre>
+        thẻ danh sách trong html là thẻ ul và thẻ li
+        thẻ ul sẽ chứa thẻ li
+
+    </pre>
+
+    <h1>Danh sách các tỉnh thành phô</h1>
+    <ul>
+        <li>Hà nội</li>
+        <li>Hồ chí minh</li>
+        <li>Đà nẵng</li>
+        <li>Hòa bình</li>
+        <li>Cần thơ</li>
+    </ul>
+
+    <pre>
+        thẻ danh sách ol trong html
+        khác với danh sách ul thẻ ol hiện các số trước các mục trong danh sách đó
+    </pre>
+
+    <h1>Danh sách tỉnh thành phố</h1>
+
+    <ol>
+        <li>Hà nội</li>
+        <li>Hồ chí minh</li>
+        <li>Đà nẵng</li>
+    </ol>
+
+
+
+
+    <pre>
+        *** chú ý :
+        tên thẻ html thì nên viết thường không nên viết hoa
+        CTRL + D để nhân đôi dòng
+
+        CTRL + F tìm kiếm nội dung bên trong 1 file,
+        Match case trong box tìm kiếm có nghĩa là phân biệt tìm kiếm theo hoa thường
+
+        CTRL + R để tìm và thay thế trong file hiện tại
+
+        CTRL + SHIFT + U và bôi đen 1 chuỗi để chuyển đổi qua lại giữa chữ hoa và chữ thường
+    </pre>
+
+
+    <DIV>không nên sử dụng chữ hoa</DIV>
+    <div>nên sử dụng chữ thường cho các thẻ html</div>
+
+
+    <!-- Index 8 + 9: form và label trong html -->
+    <pre>
+        thẻ form trong html
+        thẻ form được dùng để tạo ra 1 biểu mẫu nhằm thu thập thông tin từ người dùng
+        trong thẻ form có 3 thuộc tính quan trọng
+        name="" : tên của form
+        action="" : là đích đến mà form sẽ gửi thông tin đi
+        method="" : là phương thức gửi thông tin của form, có 2 giá trị chính là post và get
+    </pre>
+
+
+    <pre>
+        thẻ label là 1 thẻ nhãn thường được dùng trong thẻ form
+        *** input có type="text" đây là 1 ô input để nhập liệu thông thường
+        các thuộc tính của thẻ input có type="text"
+            1 - trong thẻ input luôn có thuộc tính type để chỉ ra kiểu của ô input
+            2 - thuộc tính name="" : tên của ô innput
+            3 - thuộc tính value="" : chứa giá trị của ô input
+            4 - placeholder="" : gợi ý cho người dùng biết phải gõ cái gì vào ô input và giá trị của placeholder chỉ hiển thi khi giá trị value của ô input bị rỗng
+
+    </pre>
+
+    <form name="tiki" action="" method="post">
+
+        <p>
+            <label>Họ tên</label>
+            <input type="text" name="hoten" value="" placeholder="Nhập họ tên">
+        </p>
+
+        <p>
+            <label>SĐT</label>
+            <input type="text" name="sodienthoai" value="" placeholder="Nhập số điện thoại">
+        </p>
+
+        <p>
+            <label>Mã xác thực</label>
+            <input type="text" name="maxacthuc" value="" placeholder="Nhập mã xác thực gửi đến số điện thoại trên">
+        </p>
+
+        <p>
+            <label>Email</label>
+            <input type="email" name="email" value="" placeholder="Nhập email">
+        </p>
+
+        <p>
+            <label>Mật khẩu</label>
+            <input type="password" name="matkhau" value="" placeholder="Mật khẩu từ 6 đến 32 ký tự">
+        </p>
+
+    </form>
+
+    <!-- Index 10: thẻ radio (option) -->
+    <pre>
+        thẻ input có type="radio"
+        các thẻ input có type="radio" cho phép người dùng chọn 1 trong các tùy chọn
+        như chọn nam hay nữ cho phần giới tính khi các ô input có type="radio" có cùng tên sẽ chỉ cho phép chọn 1 trong các giá trị
+        *** muốn chọn trước 1 option trong radio sử dụng thuộc tính checked
+    </pre>
+
+    <form name="tiki" action="" method="post">
+
+        <p>
+            <label>Giới tính</label>
+            <input type="radio" name="gioitinh" value="0" > Nữ
+            <input type="radio" name="gioitinh" value="1" checked> Nam
+        </p>
+
+        <p>
+            <label>Mạng di động</label>
+            <input type="radio" name="mangdidong" value="0" > Viettel
+            <input type="radio" name="mangdidong" value="1"> Mobi
+            <input type="radio" name="mangdidong" value="2" checked> Vina
+        </p>
+    </form>
+
+    <!-- index 11: thẻ textarea nhập văn bản nhiều dòng -->
+    <pre>
+        thẻ input có type="text" có thể nhập liệu được mọi giá trị như số, chuỗi ... nhưng nó chỉ cho phép nhập theo 1 dòng duy nhật
+        khi mà có 1 đoạn văn bản muốn gửi đi gồm nhiều dòng thì chúng ta sẽ sử dụng thẻ textarea
+        rows="15" cols="30"
+        rows số dòng
+        cols số cột
+    </pre>
+
+    <form name="tiki" action="" method="post">
+
+        <p>
+            <label>Ghi chú</label>
+            <textarea name="ghichu" rows="15" cols="30"></textarea>
+        </p>
+    </form>
+
+    <!-- index 12: checkbox-->
+    <pre>
+        Học thẻ input có type="checkbox"
+        nếu muốn tick trước cho checkbox thì sẽ sử dụng checked trong thẻ input
+    </pre>
+
+    <form name="tiki" method="post" action="">
+
+        <p>
+            <input type="checkbox" name="dongy" value="1">
+            Nhận các thông tin và chương trình khuyến mãi của Tiki qua điện thoại
+        </p>
+
+        <p>
+            <input type="checkbox" name="dongy2" value="2" checked>
+            Nhận các thông tin và chương trình khuyến mãi của Tiki qua email
+        </p>
+    </form>
+
+    <!-- index 13: thẻ select lựa chọn-->
+    <pre>
+        thẻ select trong html
+        thẻ select sẽ chứa các thẻ option
+        thẻ select có thuộc tính quan trọng name=""
+        thẻ option có thuộc tính quan trong là value=""
+
+        khi muốn chọn trước 1 option trong select sẽ sử dụng
+        thuộc tính selected trong option
+        nếu không có mặc định select sẽ option đầu tiên
+    </pre>
+
+    <form name="tiki" action="" method="post">
+
+        <p>
+            <label>tháng</label>
+
+            <select name="thang">
+                <option value="1">Tháng 1</option>
+                <option value="2" selected>Tháng 2</option>
+                <option value="3">Tháng 3</option>
+                <option value="4">Tháng 4</option>
+                <option value="5">Tháng 5</option>
+                <option value="6">Tháng 6</option>
+                <option value="7">Tháng 7</option>
+                <option value="8">Tháng 8</option>
+                <option value="9">Tháng 9</option>
+                <option value="10">Tháng 10</option>
+                <option value="11">Tháng 11</option>
+                <option value="12">Tháng 12</option>
+            </select>
+        </p>
+    </form>
+
+    <!-- index 14: submit-->
+    <pre>
+        input có type="submit" khi click vào nút này
+        thì form sẽ gửi liệu đến đích được quy định trong
+        thuộc tính action="" của form
+    </pre>
+
+    <form name="tiki" method="post" action="">
+        <p>
+            <input type="submit" name="abc" value="Gửi dữ liệu">
+        </p>
+    </form>
+
+    <!-- index 15: button-->
+    <pre>
+        thẻ button được sử dụng nhiều nơi trong html
+        không nhất thiết phải trong thẻ form
+        được sử dụng để khi click vào sẽ thực hiện 1 nhiệm vụ nào đó
+        thẻ button thường được sủ dụng cùng javascript để kích hoạt 1 hành động
+    </pre>
+
+    <form name="tiki" action="" method="post">
+
+        <p>
+            <button>Nút số 1</button>
+            <button>Nút số 2</button>
+            <button>Nút số 3</button>
+        </p>
+    </form>
+
+    <!-- index 16: table-->
+    <pre>
+        bảng trong html
+        thẻ table
+        thuộc tính width trong table để đặt chiều rộng
+        trong 1 bảng thì có hàng ngang và các cột dọc
+
+        thẻ tr tạo hàng ngang
+        thẻ td tạo cột dọc
+        và hàng thì sẽ chứa cột
+        nên thẻ tr sẽ chứa thẻ td
+    </pre>
+
+    <table width="60%">
+
+        <tr>
+            <td>STT</td>
+            <td>Tên sinh viên</td>
+            <td>Điểm</td>
+            <td>Xếp loại</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>nguyen van a</td>
+            <td>7</td>
+            <td>Khá</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>nguyen van b</td>
+            <td>3</td>
+            <td>Yếu</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>nguyen van c</td>
+            <td>5</td>
+            <td>Trung bình</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>nguyen van d</td>
+            <td>9</td>
+            <td>Giỏi</td>
+        </tr>
+
+    </table>
+
+
+    <!-- index 17: bố cục trang web -->
+    <pre>
+        thẻ header chứa phần đầu chủa trang
+        thẻ nav chứa phần menu điều hướng của trang
+        thẻ footer chứa phần chân trang web
+        thẻ aside chứa sidebar ( là 1 phần thông tin phụ trong trang web)
+        phần quan trọng nhất nằm giữa trang thường được tạo
+        ra bởi thẻ main hay thẻ article
+        bên trong thẻ main có thể có các thẻ section
+        chứa các vùng trong trang web
+    </pre>
+
+    <section>
+
+        <header>
+            Phần đầu của trang
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="">Thời sự</a> </li>
+                <li><a href="">Pháp luật</a> </li>
+                <li><a href="">Thế giới</a> </li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <section>Vùng section 1</section>
+                <section>Vùng section 2</section>
+                <article>
+                    Thẻ chứa nội dung của bài viết
+                </article>
+            </section>
+
+            <aside>
+                <div>div 1</div>
+                <div>div 2</div>
+                <div>div 3</div>
+
+                phần thông tin phụ trong trang web
+            </aside>
+
+        </main>
+
+        <footer>
+            Phần chân của trang ví dụ chứa thông tin liên hệ
+            hoặc bản quyền của trang web
+        </footer>
+
+
+    </section>
+
+
+
+    <!-- index 18: iframe nhúng trang web khác vào của mình-->
+    <pre>
+        thẻ iframe để nhúng 1 trang web vào trang html hiện tại
+        nhúng domain của trang web khác vào thuộc tính src của thẻ
+        iframe
+    </pre>
+
+    <iframe src="https://tiki.vn/" width="50%">
+
+    </iframe>
+
+    <iframe src="http://kenh14.vn/" width="100%">
+
+    </iframe>
+</body>
+</html>
